@@ -1,0 +1,2 @@
+def zvariance(list) -> float:
+    
