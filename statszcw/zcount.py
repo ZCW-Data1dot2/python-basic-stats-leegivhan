@@ -1,12 +1,15 @@
 def zcount(list) -> float:
     """
-    returns count of a list
-    :param list:
-    :return:
+    returns the number of elements in a list
+    :param list: list of elements
+    :return: int representing number of elements in given list
     """
-    for i in list:
-        return sum(list)
+    c = 0
+    for _ in list:
+        c += 1
+    return c
 
+# print(zcount([1,2,3,4]))
 # - zmode(list: List[]) -> float
 # - zmedian(list: List[]) -> float
 # - zvariance(list: List[]) -> float
