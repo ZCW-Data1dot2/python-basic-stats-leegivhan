@@ -12,9 +12,9 @@ def zmedian(list) -> float:
     elif len(list) % 2 == 0:
         return (list[(int(zcount(list)/2))] + list[(int(zcount(list)/2))-1]) / 2
 
-
-# print(zmedian([1, 2, 3, 2, 2, 3]))
-print(zmedian([1, 6, 2, 3, 7, 2, 2, 3]))
+if __name__ == "__main__":
+    print(zmedian([1, 2, 3, 2, 2, 3]))
+# print(zmedian([1, 6, 2, 3, 7, 2, 2, 3]))
 # listo = [1, 2, 3, 2, 2, 3]
 #
 # print((listo[(int(len(listo)/2))] + listo[(int(len(listo)/2))-1])/2)

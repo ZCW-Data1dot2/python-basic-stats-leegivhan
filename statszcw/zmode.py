@@ -14,7 +14,8 @@ def zmode(list) -> float:
                 mode = i
         return mode
 
-# print(zmode([1, 2, 3, 4, 2, 2, 3]))
+if __name__ == "__main__":
+    print(zmode([1, 2, 3, 4, 2, 2, 3]))
 
             # mode_count += 1
             # index += 1

@@ -9,7 +9,8 @@ def zcount(list) -> float:
         c += 1
     return c
 
-# print(zcount([1,2,3,4]))
+if __name__ == "__main__":
+    print(zcount([1,2,3,4]))
 # - zmode(list: List[]) -> float
 # - zmedian(list: List[]) -> float
 # - zvariance(list: List[]) -> float

@@ -2,7 +2,7 @@ from statszcw import zcount
 from statszcw import zstddev
 from statszcw import zmean
 
-def zcorr(list: List[float], list2: List[float]) -> float:
+def zcorr(list, list2) -> float:
     """
     Calculates the correlation between two lists of values
     :param list: list of values
@@ -11,8 +11,11 @@ def zcorr(list: List[float], list2: List[float]) -> float:
     """
 
     sum = 0
-    for i in range(0, len(list)):
-        sum += ((list[i] - zmean(list)) * (list2[i]-zmean(list2)))
-    cov = sum / (zcount(list)-1)
-    corr = cov / (zstddev(list) * zstddev(list2))
+    for i in range(0, zcount.zcount(list)):
+        sum += ((list[i] - zmean.zmean(list)) * (list2[i]-zmean.zmean(list2)))
+    cov = sum / (zcount.zcount(list)-1)
+    corr = cov / (zstddev.zstddev(list) * zstddev.zstddev(list2))
     return round(corr, 2)
+
+if __name__ == "__main__":
+    print(zcorr([1, 2, 3, 2, 2, 3],[1, 1, 3, 2, 1, 3]))
